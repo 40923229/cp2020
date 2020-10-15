@@ -1,9 +1,139 @@
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h1>首頁</h1>
-<p>教材 PC Hardware</p>
-<p></p>
-<h2>Part1</h2>
-<h2>part2</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923229 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923229 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='首頁.html'>首頁</a><ul class='dropdown'><li><a href='Part1.html'>Part1</a><li><a href='part2.html'>part2</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Part1 << <a href='Part1.html'>Previous</a> <br /><h1>part2</h1>
 <p>PCH 15 Introduction to Wireless Networking/無線網絡簡介</p>
 <p>Wireless LANs/無線局域網</p>
 <p>Overview/總覽<br/>The popularity of wireless local area networks (WLAN) has increased exponentially because WLAN enables people to remain connected to the network and the Internet without being tethered by wires. In this unit, we are going to cover the concepts, components, standards, design considerations, and security of WLANs. IEEE 802.11 is the overarching standard for wireless LAN technology, and was developed and is maintained by the Institute of Electrical and Electronics Engineers (IEEE) to provide wireless Ethernet connectivity to a wired IEEE 802.3 network.</p>
@@ -180,4 +310,54 @@
 <p>There are really only 11 steps to set up a small office, home office (SOHO) network</p>
 <p>設置小型辦公室，家庭辦公室（SOHO）網絡實際上只有11個步驟</p>
 <p>Decide on the type of Internet connection you will use. The ISP you choose will determine the type of modem you need and whether you buy or lease it. For a small office or home office, your most obvious choices will most likely be fiber, cable, or DSL, although a satellite, WiMAX, or cellular connection might be viable.<br/>Determine how your workstations, often referred to as clients, will connect to the router. Will you use a wireless access point or wired Ethernet switch?<br/>Choose the modem and router that will support your first two choices.<br/>Set up the account with the ISP. They will come to your location to set up the CPE, including any wiring to the location where you determine the modem is to be placed. Whether you chose to lease or buy your own modem, the ISP usually offers a service to set up the connection between the modem and your LAN router. You also have the option of installing it yourself.<br/>Cable the modem and router together.<br/>Configure the router and wireless access point (if used).<br/>Connect each client to the network (cabled or wireless) and verify they are working properly.<br/>Configure each device to be part of the same workgroup or create a homegroup; this will allow you to configure each client to share resources like printers and file sharing.<br/>Set up file and print sharing on each client designating which resources to share.<br/>Test each client to verify they can reach the Internet.<br/>Test the resources you shared in step 9 to make sure they are connected. If everything is working, you have an effective, Internet-connected workgroup that can share resources internally, as well.<br/>確定您將使用的Internet連接類型。您選擇的ISP將確定所需的調製解調器類型以及是否購買或租賃它。對於小型辦公室或家庭辦公室，儘管衛星，WiMAX或蜂窩連接可能可行，但最顯而易見的選擇很可能是光纖，電纜或DSL。<br/>確定您的工作站（通常稱為客戶端）如何連接到路由器。您將使用無線接入點還是有線以太網交換機？<br/>選擇將支持您的前兩個選擇的調製解調器和路由器。<br/>使用ISP設置帳戶。他們將來到您的位置來設置CPE，包括到您確定要放置調製解調器的位置的任何佈線。無論您選擇租賃還是購買自己的調製解調器，ISP通常都會提供一項服務來建立調製解調器與LAN路由器之間的連接。您也可以選擇自己安裝它。<br/>用電纜將調製解調器和路由器連接在一起。<br/>配置路由器和無線訪問點（如果使用）。<br/>將每個客戶端連接到網絡（電纜或無線），並驗證它們是否正常運行。<br/>將每個設備配置為同一工作組的一部分或創建一個家庭組；這將允許您配置每個客戶端以共享打印機和文件共享等資源。<br/>在每個客戶端上設置文件和打印共享，以指定要共享的資源。<br/>測試每個客戶端以驗證他們可以訪問Internet。<br/>測試您在步驟9中共享的資源，以確保它們已連接。如果一切正常，您將擁有一個有效的，與Internet連接的工作組，該工作組也可以在內部共享資源。<br/>As you can see, step six asks you to configure a wireless router. Watch this video to see more explanation on how to configure a SOHO wireless router.</p>
-<p>如您所見，第六步要求您配置無線路由器。觀看此視頻，以了解有關如何配置SOHO無線路由器的更多說明。</p>
+<p>如您所見，第六步要求您配置無線路由器。觀看此視頻，以了解有關如何配置SOHO無線路由器的更多說明。</p><br />Part1 << <a href='Part1.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
