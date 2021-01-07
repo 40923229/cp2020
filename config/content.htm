@@ -189,18 +189,31 @@
 <p><img alt="" height="344" src="/images/chrome_wlbIdpvP7C.png" width="718"/></p>
 <h2>2-2</h2>
 <div class="line number4 index3 alt1">
-<table width="506">
+<pre><span class="n"> </span></pre>
+<table width="398">
 <tbody>
-<tr style="height: 385.531px;">
-<td style="width: 496px; height: 385.531px;">
-<p><span>cp1bGroup = [[40923218, 40923203, 40923217, 40923235, 40923209, 40923245, 40923208, 40823148, 40523138, 40923246, 40923214], [40923231, 40923226, 40923202, 40923240, 40923212, 40728238, 40923253, 40923219, 40823152, 40923221, 40923205], [40923204, 40923251, 40923230, 40923252, 40923234, 40923248, 40923201, 40923243, 40923207, 40923237, 40923227], [40923225, 40923247, 40923233, 40923228, 40923236, 40923224, 40923238, 40923249, 40923206, 40923223, 40923239], [40523148, 40923220, 40923213, 40923244, 40923241, 40923232, 40923229, 40923216, 40723217, 40923210, 40923242], [40923250, 40923211]] </span><br/><span># len() can be used to get the length of a list</span><br/><span>#print(len(cp1bGroup))</span><br/><span># so we can use the for loop to read group member out</span><br/><span>groupNum = len(cp1bGroup)</span><br/><span>cp1b = []</span><br/><span>for i in range(groupNum):</span><br/><span># use len() to get student number for each group</span><br/><span>studNum = len(cp1bGroup[i])</span><br/><span>#print(cp1bGroup[i])</span><br/><span>for j in range(studNum):</span><br/><span>cp1b.append(cp1bGroup[i][j])</span><br/><span>print(cp1b)</span></p>
-<p></p>
+<tr style="height: 244.531px;">
+<td style="width: 388px; height: 244.531px;">
+<pre><span class="n">cp1bGroup</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">40923218</span><span class="p">,</span> <span class="mi">40923203</span><span class="p">,</span> <span class="mi">40923217</span><span class="p">,</span> <span class="mi">40923235</span><span class="p">,</span> <span class="mi">40923209</span><span class="p">,</span> <span class="mi">40923245</span><span class="p">,</span> <span class="mi">40923208</span><span class="p">,</span> <span class="mi">40823148</span><span class="p">,</span> <span class="mi">40523138</span><span class="p">,</span> <span class="mi">40923246</span><span class="p">,</span> <span class="mi">40923214</span><span class="p">],</span> <span class="p">[</span><span class="mi">40923231</span><span class="p">,</span> <span class="mi">40923226</span><span class="p">,</span> <span class="mi">40923202</span><span class="p">,</span> <span class="mi">40923240</span><span class="p">,</span> <span class="mi">40923212</span><span class="p">,</span> <span class="mi">40728238</span><span class="p">,</span> <span class="mi">40923253</span><span class="p">,</span> <span class="mi">40923219</span><span class="p">,</span> <span class="mi">40823152</span><span class="p">,</span> <span class="mi">40923221</span><span class="p">,</span> <span class="mi">40923205</span><span class="p">],</span> <span class="p">[</span><span class="mi">40923204</span><span class="p">,</span> <span class="mi">40923251</span><span class="p">,</span> <span class="mi">40923230</span><span class="p">,</span> <span class="mi">40923252</span><span class="p">,</span> <span class="mi">40923234</span><span class="p">,</span> <span class="mi">40923248</span><span class="p">,</span> <span class="mi">40923201</span><span class="p">,</span> <span class="mi">40923243</span><span class="p">,</span> <span class="mi">40923207</span><span class="p">,</span> <span class="mi">40923237</span><span class="p">,</span> <span class="mi">40923227</span><span class="p">],</span> <span class="p">[</span><span class="mi">40923225</span><span class="p">,</span> <span class="mi">40923247</span><span class="p">,</span> <span class="mi">40923233</span><span class="p">,</span> <span class="mi">40923228</span><span class="p">,</span> <span class="mi">40923236</span><span class="p">,</span> <span class="mi">40923224</span><span class="p">,</span> <span class="mi">40923238</span><span class="p">,</span> <span class="mi">40923249</span><span class="p">,</span> <span class="mi">40923206</span><span class="p">,</span> <span class="mi">40923223</span><span class="p">,</span> <span class="mi">40923239</span><span class="p">],</span> <span class="p">[</span><span class="mi">40523148</span><span class="p">,</span> <span class="mi">40923220</span><span class="p">,</span> <span class="mi">40923213</span><span class="p">,</span> <span class="mi">40923244</span><span class="p">,</span> <span class="mi">40923241</span><span class="p">,</span> <span class="mi">40923232</span><span class="p">,</span> <span class="mi">40923229</span><span class="p">,</span> <span class="mi">40923216</span><span class="p">,</span> <span class="mi">40723217</span><span class="p">,</span> <span class="mi">40923210</span><span class="p">,</span> <span class="mi">40923242</span><span class="p">],</span> <span class="p">[</span><span class="mi">40923250</span><span class="p">,</span> <span class="mi">40923211</span><span class="p">]]</span> 
+<span class="c1"># len() can be used to get the length of a list</span>
+<span class="c1">#print(len(cp1bGroup))</span>
+<span class="c1"># so we can use the for loop to read group member out</span>
+<span class="n">groupNum</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cp1bGroup</span><span class="p">)</span>
+<span class="n">cp1b</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">groupNum</span><span class="p">):</span>
+    <span class="c1"># use len() to get student number for each group</span>
+    <span class="n">studNum</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cp1bGroup</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="c1">#print(cp1bGroup[i])</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">studNum</span><span class="p">):</span>
+        <span class="n">cp1b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cp1bGroup</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cp1b</span><span class="p">)</span></pre>
 </td>
 </tr>
 </tbody>
 </table>
+<pre></pre>
 </div>
-<div class="line number4 index3 alt1"></div>
+<div class="line number4 index3 alt1"><img alt="" height="225" src="/images/擷取.PNG" width="930"/></div>
 <h2>2-3</h2>
 <div class="line number1 index0 alt2">
 <div>
@@ -519,3 +532,4 @@ E _ _ _ _ _ _ _ E
 <h1>心得</h1>
 <p>我覺得這學期學到很多東西，除了學會怎麼建網站、排除錯誤、跟同學的人際交流，這些都對以後很有幫助，是一個可以賺錢的工具，希望還可以接觸更多有關電腦的東西。</p>
 <h1>自評 70</h1>
+<p></p>
