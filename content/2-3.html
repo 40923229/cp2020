@@ -133,28 +133,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Pick Word＆選擇單字 << <a href='Pick Word＆選擇單字.html'>Previous</a> <a href='Hangman＆猜單詞遊戲.html'>Next</a> >> Hangman＆猜單詞遊戲<br /><h1>Guess Letters＆猜字母</h1>
-<p>Exercise 31 (and Solution)/<span>練習31（和解決方案</span><span>）</span></p>
-<p>This exercise is Part 2 of 3 of the Hangman exercise series. The other exercises are: Part 1 and Part 3.</p>
-<p>該練習是《 Hangman》練習系列3的第2部分。其他練習是：第1部分和第3部分。</p>
-<p>Let’s continue building Hangman. In the game of Hangman, a clue word is given by the program that the player has to guess, letter by letter. The player guesses one letter at a time until the entire word has been guessed. (In the actual game, the player can only guess 6 letters incorrectly before losing).</p>
-<p><span>讓我們繼續構建Hangman。</span><span>在《 Hangman》遊戲中，提示詞是由玩家逐字母猜測的程序給出的。</span><span>玩家一次猜一個字母，直到猜完整個單詞。</span><span>（在實際遊戲中，玩家只能輸錯6個字母）。</span></p>
-<p>Let’s say the word the player has to guess is “EVAPORATE”. For this exercise, write the logic that asks a player to guess a letter and displays letters in the clue word that were guessed correctly. For now, let the player guess an infinite number of times until they get the entire word. As a bonus, keep track of the letters the player guessed and display a different message if the player tries to guess that letter again. Remember to stop the game when all the letters have been guessed correctly! Don’t worry about choosing a word randomly or keeping track of the number of guesses the player has remaining - we will deal with those in a future exercise.</p>
-<p><span>假設玩家必須猜出的單詞是“ EVAPORATE”。</span><span>在本練習中，編寫要求玩家猜出字母並在提示詞中顯示正確猜出的字母的邏輯。</span><span>現在，讓玩家猜無限次，直到獲得完整的單詞為止。</span><span>作為獎勵，跟踪玩家猜出的字母，如果玩家嘗試再次猜出該字母，則顯示不同的消息。</span><span>記住正確猜出所有字母后，停止遊戲！</span><span>不必擔心隨機選擇一個單詞或跟踪玩家剩餘的猜測數-我們將在以後的練習中處理這些猜測。</span></p>
-<p>An example interaction can look like this:</p>
-<p><span>交互示例如下所示：</span></p>
-<figure class="highlight">
-<pre><code class="language-pycon" data-lang="pycon">&gt;&gt;&gt; Welcome to Hangman!
-_ _ _ _ _ _ _ _ _
-&gt;&gt;&gt; Guess your letter: S
-Incorrect!
-&gt;&gt;&gt; Guess your letter: E
-E _ _ _ _ _ _ _ E
-...</code></pre>
-</figure>
-<p>And so on, until the player gets the word.</p>
-<p><span>依此類推，直到玩家明白了。</span></p>
-<br />Pick Word＆選擇單字 << <a href='Pick Word＆選擇單字.html'>Previous</a> <a href='Hangman＆猜單詞遊戲.html'>Next</a> >> Hangman＆猜單詞遊戲</div>
+    <div id="tipue_search_content">2-2 << <a href='2-2.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3<br /><h1>2-3</h1>
+<div class="line number1 index0 alt2">
+<div>
+<div class="syntaxhighlighter py" id="highlighter_303181">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 471px;">
+<tbody>
+<tr>
+<td class="code" style="width: 467px;">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py comments">#繼2-1</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">import</code> <code class="py plain">urllib.request</code></div>
+<div class="line number3 index2 alt2"><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">cp1a </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
+<div class="line number5 index4 alt2"><code class="py keyword">for</code> <code class="py plain">line </code><code class="py keyword">in</code> <code class="py plain">urllib.request.urlopen(url):</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces">    </code><code class="py plain">cp1a.append(</code><code class="py functions">int</code><code class="py plain">(line.decode(</code><code class="py string">'utf-8'</code><code class="py plain">).rstrip()))</code></div>
+<div class="line number7 index6 alt2"><code class="py functions">print</code><code class="py plain">(cp1b)</code></div>
+<div class="line number8 index7 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"共"</code> <code class="py keyword">+</code> <code class="py functions">str</code><code class="py plain">(</code><code class="py functions">len</code><code class="py plain">(cp1a)) </code><code class="py keyword">+</code> <code class="py string">"筆"</code><code class="py plain">)</code></div>
+<div class="line number9 index8 alt2"><code class="py comments">#帶入陳述句</code></div>
+<div class="line number10 index9 alt1"><code class="py keyword">def</code> <code class="py plain">site(num):</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"https://github.com/"</code> <code class="py keyword">+</code> <code class="py functions">str</code><code class="py plain">(num) </code><code class="py keyword">+</code> <code class="py string">"/cp2020"</code><code class="py plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="py comments">#將cp1a的數帶入陳述句</code></div>
+<div class="line number13 index12 alt2"><code class="py keyword">for</code> <code class="py plain">num </code><code class="py keyword">in</code> <code class="py plain">cp1b:</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py plain">site(num)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br />2-2 << <a href='2-2.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
         
     <!-- footer -->
       <div class="container">
